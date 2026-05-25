@@ -1,0 +1,18 @@
+[workspace]
+resolver = "2"
+members = [
+    "core",
+    "renderer",
+    "ecs_world",
+    "editor"
+]
+
+[profile.dev]
+opt-level = 0
+debug = 1
+codegen-units = 256
+
+[profile.release]
+opt-level = 3
+codegen-units = 1
+debug = false
